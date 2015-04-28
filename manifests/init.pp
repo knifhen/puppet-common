@@ -30,7 +30,8 @@ class common {
       'virtualbox-4.3',
       'wine1.7',
       'oracle-java7-installer',
-      'daemon']:
+      'daemon',
+      'gir1.2-gtop-2.0']:
       responsefile => '/etc/apt/responsefile',
       require      => Class['apt::update'];
 
