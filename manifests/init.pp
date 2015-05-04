@@ -31,7 +31,8 @@ class common {
       'wine1.7',
       'oracle-java7-installer',
       'daemon',
-      'gir1.2-gtop-2.0']:
+      'gir1.2-gtop-2.0',
+      'heimdal-clients']:
       responsefile => '/etc/apt/responsefile',
       require      => Class['apt::update'];
 
