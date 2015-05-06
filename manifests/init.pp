@@ -32,11 +32,12 @@ class common {
       'oracle-java7-installer',
       'daemon',
       'gir1.2-gtop-2.0',
-      'heimdal-clients']:
+      'heimdal-clients',
+      'tidy']:
       responsefile => '/etc/apt/responsefile',
       require      => Class['apt::update'];
 
-    ['r10k']:
+    ['r10k', 'aws-sdk']:
       provider => 'gem';
   }
 }
