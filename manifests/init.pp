@@ -37,7 +37,7 @@ class common {
       responsefile => '/etc/apt/responsefile',
       require      => Class['apt::update'];
 
-    ['r10k', 'aws-sdk']:
+    ['r10k', 'aws-sdk', 'grouper']:
       provider => 'gem';
   }
 }
