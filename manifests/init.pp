@@ -2,7 +2,7 @@ class common {
   include apt
   include maven
 
-  apt::ppa { ['ppa:webupd8team/sublime-text-3', 'ppa:ubuntu-wine/ppa', 'ppa:webupd8team/java']:
+  apt::ppa { ['ppa:webupd8team/sublime-text-3', 'ppa:ubuntu-wine/ppa', 'ppa:webupd8team/java', 'ppa:brightbox/ruby-ng']:
     release => 'trusty',
     options => '-y';
   }
@@ -35,7 +35,8 @@ class common {
       'heimdal-clients',
       'tidy',
       'keepassx',
-      'rdesktop']:
+      'rdesktop',
+      'ruby2.1']:
       responsefile => '/etc/apt/responsefile',
       require      => Class['apt::update'];
 
