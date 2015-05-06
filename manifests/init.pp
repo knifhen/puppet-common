@@ -33,7 +33,9 @@ class common {
       'daemon',
       'gir1.2-gtop-2.0',
       'heimdal-clients',
-      'tidy']:
+      'tidy',
+      'keepassx',
+      'rdesktop']:
       responsefile => '/etc/apt/responsefile',
       require      => Class['apt::update'];
 
